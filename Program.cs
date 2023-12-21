@@ -5,19 +5,19 @@ using System.Diagnostics.CodeAnalysis;
 using System.IO.Pipes;
 using System.Security.Cryptography;
 using System.Globalization;
-using System.Xml.Schema;
 
-Console.WriteLine("Digite um numero! ");
+int A, B, C, D, dif;
 
-int NumeroLidos = int.Parse(Console.ReadLine());
-int soma = 0;
+Console.WriteLine("Porfavor Insira o primeiro numero: ");
+A = int.Parse(Console.ReadLine());
+Console.WriteLine("Porfavor Insira o segundo numero: ");
+B = int.Parse(Console.ReadLine());
+Console.WriteLine("Porfavor Insira o terceiro numero: ");
+C = int.Parse(Console.ReadLine());
+Console.WriteLine("Porfavor Insira o quarto numero: ");
+D = int.Parse(Console.ReadLine());
 
+dif = A * B - C * D;
 
-
-while (NumeroLidos != 0)
-{
-
-    Console.WriteLine("Digite outro numero: ");
-    soma = soma + NumeroLidos;
-}
-Console.WriteLine("O valor dos numeros inseridos é de: " + soma);
+Console.WriteLine("DIFERENCA = " + dif);
+        
