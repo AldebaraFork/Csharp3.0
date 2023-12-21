@@ -1,0 +1,18 @@
+using System;
+using System.ComponentModel.Design;
+using System.Diagnostics.CodeAnalysis;
+using System.IO.Pipes;
+using System.Security.Cryptography;
+using System.Globalization;
+
+int NumeroFuncionario = int.Parse(Console.ReadLine());
+
+int HorasTrabalhadas = int.Parse(Console.ReadLine());
+
+double ValorHora = double.Parse(Console.ReadLine().ToString(CultureInfo.InvariantCulture));
+
+double Salario = HorasTrabalhadas * ValorHora;
+
+
+Console.WriteLine("NUMERO = " + NumeroFuncionario);
+Console.WriteLine("SALARIO = R$ " + Salario.ToString("F2",CultureInfo.InvariantCulture));
