@@ -1,0 +1,49 @@
+using System;
+using System.ComponentModel.Design;
+using System.Diagnostics.CodeAnalysis;
+using System.IO.Pipes;
+using System.Security.Cryptography;
+using System.Globalization;
+
+//nome
+
+Console.WriteLine("Digite seu nome completo: ");
+
+string[] dados = Console.ReadLine().Split(' ');
+
+string PrimeiroNome = dados[0];
+string SegundoNome = dados[1];
+
+
+
+
+
+//quartos
+
+Console.WriteLine("Quantos quartos tem na sua casa?");
+int quartos = int.Parse(Console.ReadLine());
+
+//produto
+
+Console.WriteLine("Entre com o preço de um produto: ");
+double produto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+
+Console.WriteLine("Digite sua idade: ");
+int idade = int.Parse(Console.ReadLine());
+
+//altura
+
+Console.WriteLine("Digite sua altura: ");
+double altura = double.Parse(Console.ReadLine(), (CultureInfo.InvariantCulture));
+
+
+Console.WriteLine("Voce digitou: ");
+
+Console.WriteLine(PrimeiroNome + " " + SegundoNome);
+Console.WriteLine(quartos);
+Console.WriteLine(produto);
+Console.WriteLine(SegundoNome);
+Console.WriteLine(idade);
+Console.WriteLine(altura);
+Console.Write(dados[1] + " " + idade + " " + altura.ToString("F2", CultureInfo.InvariantCulture));
